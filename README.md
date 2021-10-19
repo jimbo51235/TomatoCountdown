@@ -13,13 +13,13 @@ Compatibility: iOS 11 or greater<br/>
 TomatoCountdown lets you create a countdown timer with a one-color circular ring.  The following is a list of features.
 
 <ol>
-<li>Start the position where a circular ring starts.</li>
+<li>Set the position in degree where a circular ring starts.</li>
 <li>Set the size, the weight and the color of a circular ring.</li>
 <li>Have options of including or not including a speech (Engllish only) counting down numbers.</li>
 <li>Set an English local for a speech voice.</li>
 <li>Adjust the speed of speech.</li>
-<li>Tap the number to stop and quit counting down numbers.</li>
-<li>Set the font of countdown numbers.</li>
+<li>Tap the number to let the user stop and quit counting down numbers.</li>
+<li>Set the font of a UILabel object for showing countdown numbers.</li>
 </ol>
 
 <h2>Installation</h2>
@@ -28,9 +28,11 @@ TomatoCountdown lets you create a countdown timer with a one-color circular ring
 
 ![](Screenshots/Screenshot_002.jpg)
 
-2. In your view controller, import two frameworks, AVFoundation and TomatoCountdown.  When the user aborts the countdown or reaches the end of countdown, you will receive a delegate call.  So set 'TomatoCircleViewDelegate' in the view controller class.
+2. In your view controller, import two frameworks, **AVFoundation** and **TomatoCountdown**.  When the user aborts the countdown or reaches the end of countdown, you will receive a delegate call.  So set **TomatoCircleViewDelegate** in the view controller class.
 
-3. Create an AVSpeechSynthesizer object.  And make a silent speech in your viewDidLoad.  (See the sample project.)  If you don't, whenever your app first count down numbers with audio, it will stutter.
+3. Create an **AVSpeechSynthesizer** object.  And make a silent speech in your viewDidLoad.  (See the sample project.)  If you don't, whenever your app first count down numbers with audio, it will stutter.
+
+4. When you are ready to count down numbers, instantiate **TomatoCircleView** with the initial values.  Set its delegate.  Finally, call **createProgress**.
 
 <h2>Init</h2>
 
