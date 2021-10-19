@@ -46,7 +46,7 @@ TomatoCountdown lets you create a countdown timer with a one-color circular ring
 <li>weight: It's the stroke size of the circle.</li>
 <li>labelFont: It's the font of the UILabel object that counts down numbers.</li>
 <li>num: It's the starting number.</li>
-<li>rect: It's the frame of a UIView object holding the number of label and the circle.  (See the screenshot below.)</li>
+<li>rect: It's the frame of a UIView object holding the number label and the circle.  (See the screenshot below.)</li>
 <li>view: It's the view of your view controller.</li>
 
 ![](Screenshots/Screenshot_003.jpg)
